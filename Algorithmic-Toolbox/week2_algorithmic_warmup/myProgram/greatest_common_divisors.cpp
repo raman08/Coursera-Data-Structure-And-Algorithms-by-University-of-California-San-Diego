@@ -74,7 +74,7 @@ int main()
 	int a, b;
 	long long result;
 
-	cout << "Enter 2 Numbers whose Greatest Common Divisors you want to calculate:";
+	// cout << "Enter 2 Numbers whose Greatest Common Divisors you want to calculate:";
 
 	cin >> a >> b;
 

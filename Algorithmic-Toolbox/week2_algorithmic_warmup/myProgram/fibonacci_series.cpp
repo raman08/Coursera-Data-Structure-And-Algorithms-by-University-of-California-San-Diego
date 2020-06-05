@@ -54,7 +54,7 @@ long long fibonacci_fast(int n) {
 int  main()
 {
 	int n;
-	cout << "Enter the number:";
+	// cout << "Enter the number:";
 	cin >> n;
 
 	long long result = fibonacci_fast(n);
