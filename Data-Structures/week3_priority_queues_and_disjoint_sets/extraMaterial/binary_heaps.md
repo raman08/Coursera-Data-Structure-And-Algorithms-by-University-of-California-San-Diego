@@ -1,6 +1,6 @@
-#Binary Heaps
+# Binary Heaps
 
-##Defination
+## Defination
 
 	Binary max-heap is a binary tree where the value if each node is at least the values of its children.
 
@@ -32,40 +32,40 @@ For the better implementation of the binary heap we use complete binary tree.
 
 	maxSize: max no. of element in heap
 	size: present size of heap
-	H[maxsize]: array representing tree // 1 base index
+	H[maxsize]: array representing tree
 
 ## Implementation
 
 ### Parent(i)
 
 	Parent(i) {
-		return floor(i/2)
+		return floor( (i - 1) / 2)
 	}
 
 
 ### LeftChild(i)
 
 	LeftChild(i) {
-		return 2 * i
+		return (2 * i) + 1
 	}
 
 ### RightChild(i)
 
 	RightChild(i) {
-		return (2 * i) + 1
+		return (2 * i) + 2
 	}
 
 ### GetMax()
 
 	GetMax() {
-		return H[1]
+		return H[0]
 	}
 
 ### SiftUp(i)
 
 	SiftUp(i) {
 
-		while i > 1 and H[Parent(i)] < H[i]:
+		while i > 0 and H[Parent(i)] < H[i]:
 			swap H[Parent(i)] and H[i]
 
 		i = Parent(i)
@@ -108,11 +108,11 @@ For the better implementation of the binary heap we use complete binary tree.
 
 	ExtractMax() {
 
-		result = H[1]
-		H[1] = H[size]
+		result = H[0]
+		H[0] = H[size]
 		size = size -1
 
-		ShiftDown(1)
+		ShiftDown(0)
 
 		return result
 	}
