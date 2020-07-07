@@ -1,6 +1,6 @@
-#Defination
+# Defination
 
-##Dynamic Array:
+## Dynamic Array:
 
 	Abstract data type with the following operations (at a minimun):
 
@@ -12,16 +12,16 @@
 
 	All the operations must be in constant time.
 
-##Store
+## Store
 
 	arr: dynamically-allocated array
 	capicity: size of arr
 	size: number of current element in arr
 
 
-#Implementations
+# Implementations
 
-###Get(i)
+### Get(i)
 
 	Get(i){
 		if i < 0 or i >= size:
@@ -29,7 +29,7 @@
 		return arr[i]
 	}
 
-###Set(i, val)
+### Set(i, val)
 
 	Set(i, val) {
 		if i < 0 or i >= size:
@@ -37,7 +37,7 @@
 		arr[i] = val
 	}
 
-###PushBack(val)
+### PushBack(val)
 
 	PushBack(val) {
 		if size == capicity:
@@ -54,7 +54,7 @@
 		size = size + 1
 	}
 
-###Remove(i)
+### Remove(i)
 
 	Remove(i) {
 		if i < 0 or i >= size:
@@ -66,20 +66,20 @@
 		size = size + 1
 	}
 
-###Size()
+### Size()
 
 	Size(){
 		return size
 	}
 
 
-##Languages
+## Languages
 
 	C++ : vector
 	Java : ArrayList
 	Python : list
 
-##Runtime
+## Runtime
 
 	Get(i) : O(1)
 	Set(i, val) : O(1)

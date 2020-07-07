@@ -1,19 +1,19 @@
-#Defination
+# Defination
 
-##Amotized Cost:
+## Amotized Cost:
 
 	Given a sequence of n operations, amortized cost is:
 		( Cost(n operations)/n )
 
-##Aggregate Method
+## Aggregate Method
 
-##Banker's Method
+## Banker's Method
 
 	Charge extea for each cheap operation
 	Save the extra charges as tokens in your data structure
 	Use the tokens to pay expensive operations
 
-##Physicist's Method
+## Physicist's Method
 
 	define a potential function, phi which maps states of the data structure to integers:
 
