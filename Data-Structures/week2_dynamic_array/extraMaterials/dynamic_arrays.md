@@ -1,6 +1,7 @@
 #Defination
 
 ##Dynamic Array:
+
 	Abstract data type with the following operations (at a minimun):
 
     Get(i): return element at location i*
@@ -12,6 +13,7 @@
 	All the operations must be in constant time.
 
 ##Store
+
 	arr: dynamically-allocated array
 	capicity: size of arr
 	size: number of current element in arr
@@ -20,6 +22,7 @@
 #Implementations
 
 ###Get(i)
+
 	Get(i){
 		if i < 0 or i >= size:
 			ERROR: index out of range
@@ -27,6 +30,7 @@
 	}
 
 ###Set(i, val)
+
 	Set(i, val) {
 		if i < 0 or i >= size:
 			ERROR: index out of range
@@ -34,6 +38,7 @@
 	}
 
 ###PushBack(val)
+
 	PushBack(val) {
 		if size == capicity:
 			allocate new_arr[2*capicity]
@@ -50,6 +55,7 @@
 	}
 
 ###Remove(i)
+
 	Remove(i) {
 		if i < 0 or i >= size:
 			ERROR: index out of range
@@ -61,17 +67,20 @@
 	}
 
 ###Size()
+
 	Size(){
 		return size
 	}
 
 
 ##Languages
+
 	C++ : vector
 	Java : ArrayList
 	Python : list
 
 ##Runtime
+
 	Get(i) : O(1)
 	Set(i, val) : O(1)
 	PishBack(val) : O(n)
