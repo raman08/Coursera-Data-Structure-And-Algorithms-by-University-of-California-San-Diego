@@ -15,15 +15,15 @@ Sort using Priority Queue
 			A[i] = ExtractMax()
 	}
 
-###### Time Complexity
+#### Time Complexity
 
 	HeapSort(A[n]) : O( log(n) )
 
-###### Disadvantage
+#### Disadvantage
 
 	uses extra space for storing the heap
 
-##### Overcomming the Disdavantage
+### Overcomming the Disdavantage
 
 ### Turning Array into Heap
 
