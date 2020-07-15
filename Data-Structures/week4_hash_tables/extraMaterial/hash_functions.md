@@ -34,9 +34,9 @@ There is no universal hash functions
 ### Hashing Integers
 
 	H<p> = {h<p>(x) = ((ax + b) mod p) mod m}
-					for all a, b : 1 <= a <= p-1
-								   0 <= b <= p-1
-								   p is a prime > 10^len(data)
+			for all a, b : 1 <= a <= p-1
+				       0 <= b <= p-1
+				       p is a prime > 10^len(data)
 
 	is a universal family.
 
@@ -88,7 +88,8 @@ For any two different string s1 and s2 of length at most L + 1, if you choose j 
 	For using in a hash table of size m, we need a hash function of size m.
 	But if we use PolyHash function then the cardinality become p, the big prime number. This will increse the memory consumption.
 
-	To fix this we first apply random h from P<p> and then hash the resulting calue against using the integer hashing. Denote the resulting function by h<m>.
+	To fix this we first apply random h from P<p> and then hash the resulting hash against using the integer hashing. 
+	Denote the resulting function by h<m>.
 
 ~~~
 
