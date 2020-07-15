@@ -1,7 +1,11 @@
 ## Hash Function
 
 #### Defination
-	For any set of object S and any integer m > 0, a function h : S --> {0, 1, 1,3, ... , m - 1} is called hash function.
+	For any set of object S and any integer m > 0, a function 
+	
+		h : S --> {0, 1, 1,3, ... , m - 1}
+	
+	is called hash function.
 
 	m is called the cardinality of hash function h.
 
@@ -72,15 +76,15 @@
 
 	An implementation of set or a map using hashing is called hash table.
 
-###### Examples in Programming Languages
+##### Examples in Programming Languages
 
-####### Set:
+###### Set:
 
 	unordered_set in C++
 	HashSet in Java
 	Set in Pyhton
 
-####### Map:
+###### Map:
 
 	unordered_map in C++
 	HashMap in Java
