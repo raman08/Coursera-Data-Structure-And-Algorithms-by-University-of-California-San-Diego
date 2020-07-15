@@ -47,5 +47,5 @@
 ~~~
 
 Running time of FindPatternNative(T, P) is O(|T| * |P|)
-[[]]
+
 ~~~
