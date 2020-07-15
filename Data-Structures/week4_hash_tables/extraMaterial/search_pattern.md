@@ -6,7 +6,7 @@
 
 	Input: String T and P
 
-	Output: All such postion i in T, 0 <= i <= |T| - |P| that T[i..i + |P| - 1		  ] = P
+	Output: All such postion i in T, 0 <= i <= |T| - |P| that T[i..i + |P| - 1] = P
 
 
 ## Substring Notation
