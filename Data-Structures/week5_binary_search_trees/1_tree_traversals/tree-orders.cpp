@@ -37,10 +37,10 @@ public:
   }
 
   vector <int> pre_order() {
-    vector<int> result;    
+    vector<int> result;
     // Finish the implementation
     // You may need to add a new recursive method to do that
-    
+
     return result;
   }
 
@@ -48,7 +48,7 @@ public:
     vector<int> result;
     // Finish the implementation
     // You may need to add a new recursive method to do that
-    
+
     return result;
   }
 };
@@ -98,4 +98,3 @@ int main (int argc, char **argv)
 
   return main_with_large_stack_space();
 }
-
