@@ -12,7 +12,7 @@
 
 		3) RangeSearch(x, y): Returns all elements with keys b/w x and y.
 
-		4) NearestNeighbour(z): Returns the element with keys on either side 						 of z.
+		4) NearestNeighbour(z): Returns the element with keys on either side                         of z.
 
 This problem is solved by using binary search tree.
 
