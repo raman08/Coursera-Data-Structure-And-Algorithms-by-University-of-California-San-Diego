@@ -1,5 +1,6 @@
-##Singly-Linked List:
+## Singly-Linked List:
 
+### PushFront(key)
 	PushFront(key) {
 
 		node = new node
@@ -11,6 +12,8 @@
 			tail = head
 	}
 
+### PopFront(key)
+
 	PopFront(key) {
 
 		if head == nil:
@@ -21,6 +24,8 @@
 		if head == nil:
 			tail = nil
 	}
+
+### PushBack(key)
 
 	PushBack(key) {
 
@@ -35,6 +40,8 @@
 			tail.next = node
 			tail = node
 	}
+
+### PopBack(key)
 
 	PopBack() {
 
@@ -54,6 +61,8 @@
 			tail = p
 	}
 
+### AddAfter(node, key)
+
 	AddAfter(node, key) {
 
 		node2 = new node
@@ -64,9 +73,11 @@
 		if tail == node
 			tail = node2
 	}
+	
 
 ##Double Linked List
 
+### PushBack(key)
 	PushBack(key) {
 
 		node = new node
@@ -80,6 +91,8 @@
 			tail = node
 	}
 
+### Popback()
+
 	Popback() {
 
 		if head = nil:
@@ -91,6 +104,8 @@
 			tail = tail.prev
 			tail.next = nil
 	}
+
+### AddAfter(node, key) 
 
 	AddAfter(node, key) {
 
@@ -106,6 +121,8 @@
 		if tail == node
 			tail = node2
 	}
+
+### AddAfter(node, key) 
 
 	AddAfter(node, key) {
 
