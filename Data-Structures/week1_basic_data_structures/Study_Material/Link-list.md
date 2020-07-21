@@ -75,9 +75,10 @@
 	}
 	
 
-##Double Linked List
+## Double Linked List
 
 ### PushBack(key)
+
 	PushBack(key) {
 
 		node = new node
