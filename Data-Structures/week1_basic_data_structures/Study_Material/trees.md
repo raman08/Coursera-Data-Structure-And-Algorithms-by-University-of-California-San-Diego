@@ -3,11 +3,14 @@
 ## Defination
 
 A tree is:
-	1) Empty, or
-	2) a node with:
-		a) a key, and
-		b) a list of the child trees.
-		c) parents (optional)
+	
+1) Empty, or
+
+2) a node with:
+
+a) a key, and
+b) a list of the child trees.
+c) parents (optional)
 
 ## Terminology
 	
@@ -27,10 +30,11 @@ A tree is:
 The tree with maximun of the 2 childern is called binary tree.
 
 For a binary tree, node consist:
-	1) key
-	2) left
-	3) right
-	4) parents (OPtional)
+
+1) key
+2) left
+3) right
+4) parents (OPtional)
 	
 	
 	
