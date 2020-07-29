@@ -1,7 +1,6 @@
-/*
-	Problem Statement:
+# Problem Statement:
 
-		we have a string. And it has left parens, right parens, left square brackets, and right square brackets. And we want to determine whether or not that string of parentheses and square brackets, whether they're balanced.
+We have a string. And it has left parens, right parens, left square brackets, and right square brackets. And we want to determine whether or not that string of parentheses and square brackets, whether they are balanced.
 
 		Input:
 			A string ste consisting of '(', ')',  '{', '}', '[', ']' chracters.
@@ -47,5 +46,3 @@
 			return stack.Empty();
 
 		}
-
-*/
