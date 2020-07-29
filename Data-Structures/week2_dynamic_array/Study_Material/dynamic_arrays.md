@@ -2,21 +2,21 @@
 
 ## Defination
 
-	Abstract data type with the following operations (at a minimun):
+Abstract data type with the following operations (at a minimun):
 
-    	Get(i): return element at location i*
-		Set(i, val): sets element i to val*
-		PushBack(val): Adds val to the end
-		Remove(i): Remove element at location i
-		Size(): return size of the array
+   	Get(i): return element at location i*
+	Set(i, val): sets element i to val*
+	PushBack(val): Adds val to the end
+	Remove(i): Remove element at location i
+	Size(): return size of the array
 
-	All the operations must be in constant time.
+All the operations must be in constant time.
 
 ### Store
 
-	arr: dynamically-allocated array
-	capicity: size of arr
-	size: number of current element in arr
+arr: dynamically-allocated array
+capicity: size of arr
+size: number of current element in arr
 
 
 ## Implementations
@@ -75,9 +75,9 @@
 
 ## Languages
 
-	C++ : vector
-	Java : ArrayList
-	Python : list
+C++ : vector
+Java : ArrayList
+Python : list
 
 ## Runtime
 
