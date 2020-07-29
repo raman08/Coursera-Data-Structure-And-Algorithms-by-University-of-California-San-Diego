@@ -2,7 +2,7 @@
 
 ## Defination
 
-	Binary max-heap is a binary tree where the value if each node is at least the values of its children.
+Binary max-heap is a binary tree where the value of each node is at least the values of its children.
 
 ## Basic Operations
 
@@ -22,6 +22,7 @@ For the better implementation of the binary heap we use complete binary tree.
 ### Advantage of complete binary tree to use as binary heap
 
 	1) The height of any complete binary tree with n nodes is O( log(n) ).
+	
 	2) Can be stored as array
 		For any iterator i:
 			a) parent(i) = floor(i/2)
@@ -33,6 +34,7 @@ For the better implementation of the binary heap we use complete binary tree.
 	maxSize: max no. of element in heap
 	size: present size of heap
 	H[maxsize]: array representing tree
+	
 
 ## Implementation
 
