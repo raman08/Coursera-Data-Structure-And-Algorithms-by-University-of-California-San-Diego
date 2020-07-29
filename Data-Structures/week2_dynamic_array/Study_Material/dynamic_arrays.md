@@ -15,7 +15,9 @@ All the operations must be in constant time.
 ### Store
 
 arr: dynamically-allocated array
+
 capicity: size of arr
+
 size: number of current element in arr
 
 
@@ -76,7 +78,9 @@ size: number of current element in arr
 ## Languages
 
 C++ : vector
+
 Java : ArrayList
+
 Python : list
 
 ## Runtime
