@@ -21,7 +21,7 @@ Examples:
 		"([]]()"
 		"]["
 
-## Phudo Code:
+## Phsudo Code:
 
 	IsBalanced(str) {
 
