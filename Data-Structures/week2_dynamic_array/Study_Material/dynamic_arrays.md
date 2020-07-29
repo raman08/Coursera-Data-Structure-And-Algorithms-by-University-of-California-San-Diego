@@ -1,25 +1,25 @@
-# Defination
+# Dynamic Array:
 
-## Dynamic Array:
+## Defination
 
 	Abstract data type with the following operations (at a minimun):
 
-    Get(i): return element at location i*
-	Set(i, val): sets element i to val*
-	PushBack(val): Adds val to the end
-	Remove(i): Remove element at location i
-	Size(): return size of the array
+    	Get(i): return element at location i*
+		Set(i, val): sets element i to val*
+		PushBack(val): Adds val to the end
+		Remove(i): Remove element at location i
+		Size(): return size of the array
 
 	All the operations must be in constant time.
 
-## Store
+### Store
 
 	arr: dynamically-allocated array
 	capicity: size of arr
 	size: number of current element in arr
 
 
-# Implementations
+## Implementations
 
 ### Get(i)
 
