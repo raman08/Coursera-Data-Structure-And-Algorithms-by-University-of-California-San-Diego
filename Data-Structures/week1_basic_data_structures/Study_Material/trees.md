@@ -9,7 +9,9 @@ A tree is:
 2) a node with:
 
 a) a key, and
+
 b) a list of the child trees.
+
 c) parents (optional)
 
 ## Terminology
@@ -58,6 +60,27 @@ For a binary tree, node consist:
 		return 1 + max(Size(tree.left) + Size(tree.right));
 	}
 
+
+## Depth First Traversal
+
+The first three algorithms are used as depth first stratergies. In all three algorithms all the sub-tree are traversed first before exploring the other sibling.
+
+### In_Order_traversal(tree)
+	
+	// Mostly for binary Tree
+	
+	In_Order_traversal(tree) { 
+
+		if tree == nil:
+			return
+
+		In_Order_traversal(tree.left)
+
+		///Operations on element///
+
+		In_Order_traversal(tree.right)
+	}
+	
 ### Pre_order_traversal(tree)
 
 	Pre_order_traversal(tree) {
@@ -84,9 +107,13 @@ For a binary tree, node consist:
 		///Operations///
 	}
 
-### Breath_first_Level_traversal(tree)
+## Breath First Travelsal
 
-	Breath_first_Level_traversal(tree) {
+It is used to traverse the tree such that all nodes in the same level are traversed first.
+
+### Level_Order_traversal(tree)
+
+	Level_Order_traversal(tree) {
 
 		if tree == nil:
 			return
@@ -95,31 +122,17 @@ For a binary tree, node consist:
 		q.Enqueue(tree)
 
 		while not q.Empty() :
-			node = q.Dequeue()
+			current = q.Dequeue()
 
 			///Operations///
 
-			if node.left != nil:
-				q.Enqueue(node.left)
+			if current.left != nil:
+				q.Enqueue(current.left)
 
-			if node.right != nil:
-				q.Enqueue(node.right)
+			if current.right != nil:
+				q.Enqueue(current.right)
+			
+			q.dequeue(current)
 
 	}
 
-
-### In_Order_traversal(tree)
-	
-	// Mostly for binary Tree
-	
-	In_Order_traversal(tree) { 
-
-		if tree == nil:
-			return
-
-		In_Order_traversal(tree.left)
-
-		///Operations on element///
-
-		In_Order_traversal(tree.right)
-	}
