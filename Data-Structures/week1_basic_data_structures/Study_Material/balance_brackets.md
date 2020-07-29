@@ -2,45 +2,45 @@
 
 We have a string. And it has left parens, right parens, left square brackets, and right square brackets. And we want to determine whether or not that string of parentheses and square brackets, whether they are balanced.
 
-		Input:
-			A string ste consisting of '(', ')',  '{', '}', '[', ']' chracters.
+Input:
+	A string ste consisting of '(', ')',  '{', '}', '[', ']' chracters.
 
-		Output:
-			return whether or not string's parentheses and square brackets are balanced.
+Output:
+	Return whether or not string's parentheses and square brackets are balanced.
 
 
-		Examples:
+Examples:
 
-			blance:
+	blance:
 
-				"([])[]()"
-				"((([([])])) ())"
+		"([])[]()"
+		"((([([])])) ())"
 
-			Unbalanced:
+	Unbalanced:
 
-				"([]]()"
-				"]["
+		"([]]()"
+		"]["
 
-	Phudo Code:
+## Phudo Code:
 
-		IsBalanced(str) {
+	IsBalanced(str) {
 
-			Stack stack;
+		Stack stack;
 
-			for char in str:
+		for char in str:
 
-				if char in ['(', '[', '{']:
-					stack.Push(char)
+			if char in ['(', '[', '{']:
+				stack.Push(char)
 
-				else:
+			else:
 
-					if stack.Empty():
-						return False;
+				if stack.Empty():
+					return False;
 
-					top = stack.pop()
+				top = stack.pop()
 
-					if (top == "[" and char != ']') or (top == "(" and char != ')') or (top == "{" and char != '}'):
-						return False;
+				if (top == "[" and char != ']') or (top == "(" and char != ')') or (top == "{" and char != '}'):
+					return False;
 
 
 			return stack.Empty();
