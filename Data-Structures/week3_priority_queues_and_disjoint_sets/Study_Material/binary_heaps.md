@@ -26,7 +26,7 @@ A binary tree is called complete if all its levels are filled completely
 	
 	2) Complete Binary Tree can be stored as array.
 	
-		For any iterator i:
+		For any iterator i (1 base indexing):
 			a) parent(i) = floor(i/2)
 			b) leftchild(i) = 2*i
 			c) rightchild(i) = 2i + 1
