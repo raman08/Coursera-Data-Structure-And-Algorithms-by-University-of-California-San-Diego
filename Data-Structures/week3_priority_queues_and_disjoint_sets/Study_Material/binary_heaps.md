@@ -6,24 +6,26 @@ Binary max-heap is a binary tree where the value of each node is at least the va
 
 ## Basic Operations
 
-	GetMax(): Find max value of binary heap O(1)
+	GetMax(): Find max value of binary heap 
 
-	Insert(val): insert the value val in binary heap O(height)
+	Insert(val): insert the value val in binary heap 
 
-	ExtractMax(): extract the maximun value of the binary heap O(height)
+	ExtractMax(): extract the maximun value of the binary heap 
 
-	ChangePriority(it, p): changes the priority of an element pointed at it to p O(height)
+	ChangePriority(it, p): changes the priority of an element pointed at it to p 
 
-	Remove(p): remove the element p O(height)
+	Remove(p): remove the element p 
 
 For the better implementation of the binary heap we use complete binary tree.
-	A binary tree is called complete if all its levels are filled completely
+
+A binary tree is called complete if all its levels are filled completely
 
 ### Advantage of complete binary tree to use as binary heap
 
 	1) The height of any complete binary tree with n nodes is O( log(n) ).
 	
-	2) Can be stored as array
+	2) Complete Binary Tree can be stored as array.
+	
 		For any iterator i:
 			a) parent(i) = floor(i/2)
 			b) leftchild(i) = 2*i
