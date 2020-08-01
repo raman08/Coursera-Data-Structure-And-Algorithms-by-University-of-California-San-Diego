@@ -33,8 +33,15 @@ Assumptions:
 
 
 ### Union(i, j)
-	We will store height of the each subtree in an array rank[1..n]:
-		rank[i] is the height if the subtree whose height is i.
+	
+For the union operation we hang the one tree over the other tree.
+To do this we just find the tree with smaller height and hand it to the other tree.
+
+We will store height of the each subtree in an array rank[1..n]:
+	rank[i] is the height of the subtree whose root is i.
+	
+		
+		
 
 
 	Union(i, j) {
@@ -75,12 +82,21 @@ The amortized running time of find in this case become log*(n).
 
 Note: The maximun value of the log*(n) for all practicle value of n is <= 5.
 
+#### Iterated Logarithm
+
+log*(n) is the number of the logarithm functon needs to be applied to n before teh result is less or equal than 1
 
 
-#### Find(i)
 
-	Find(i) {
+#### Find_Path_Compression(i)
+
+	Find_Path_Compression(i) {
 
 		if i != parent[i]:
 			parent[i] = Find(parent[i])
+		
+		return parent[i];
+	
 	}
+	
+
