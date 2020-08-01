@@ -99,4 +99,6 @@ log*(n) is the number of the logarithm functon needs to be applied to n before t
 	
 	}
 	
-
+## Running Time
+	
+When used both path compression and union by the rank huristic the amortizrd running time become: O( log*(n) ) which is nearly constant for all the practicle values.
