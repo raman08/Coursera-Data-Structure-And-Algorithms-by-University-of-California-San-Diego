@@ -113,6 +113,7 @@ The vertices of a graph G can be partitioned into **connected components** so th
 ### Connected Components
 
 **Input:** Graph G
+
 **Output:**  The connected conponents of G.
 
 #### Explore(v)
