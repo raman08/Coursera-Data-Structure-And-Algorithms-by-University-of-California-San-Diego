@@ -9,6 +9,7 @@ A path in a graph G is a sequence of the vertices v0, v1, ...  that for all i, (
 ### Rechability
 
 **INPUT :** Graph G and vertex s
+
 **OUTPUT :** The collection of the vertices v of the G so that there is a path from s to v.
 
 Find which vertix in G are rechable from others.
@@ -112,6 +113,7 @@ The vertices of a graph G can be partitioned into **connected components** so th
 ### Connected Components
 
 **Input:** Graph G
+
 **Output:**  The connected conponents of G.
 
 #### Explore(v)
