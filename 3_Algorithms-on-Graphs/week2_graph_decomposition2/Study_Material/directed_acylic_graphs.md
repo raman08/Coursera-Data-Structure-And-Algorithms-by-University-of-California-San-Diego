@@ -43,7 +43,7 @@ A directed graph G is a **Directed Acylic Graph** (or *DAG*) if it has no cycles
 
 #### Defination
 
-1. A **sourec** is a vertex with no incomming edges.
+1. A **source** is a vertex with no incomming edges.
 2. A **sink** is a vertex with no outgoing edges.
 
 

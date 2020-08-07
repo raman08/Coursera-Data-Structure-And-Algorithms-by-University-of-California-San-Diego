@@ -62,3 +62,47 @@ A graph obtain by reversing all the edges in a given graph G is called **Reverse
 - Sourece component of the $G^R$ are sink component of G.
 
 We can find the sink components of the G by running DFS on $G^R$.
+
+The vertex with the largest postorder in $G^R$ is in sink SCC of G.
+
+#### SSCs(G)
+
+```
+
+SCCs(G) {
+
+	run DFS($G^R$)
+	let c be the largest post number
+	run explore(v)
+	vertices found are first SCC
+	Remove from the G and repreat.
+
+}
+
+```
+
+This algorithm is also little bit un-efficient as we need to run the DFS on each component.
+
+###### Improvement
+
+- We don't need to rerun DFS on $G^R$.
+- Largest remaining post number comes from sink conponent.
+
+#### SCCs_effective(G)
+
+```
+
+SCCs_effective(G) {
+
+	Run DFS($G^R$)
+
+	for v in V in reverse postorder:
+		if not visited(v):
+			Explore(v)
+			mark visited vertices as new SCC.
+
+}
+
+```
+
+`Runtime: ` O(|V| + |E|)
