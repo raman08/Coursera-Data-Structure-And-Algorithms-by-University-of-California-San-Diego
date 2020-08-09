@@ -1,4 +1,4 @@
-###### Path and the Lenghts
+#### Path and the Lenghts
 
 **Length** of the path L(P) is the number of the edges in the path.
 
@@ -6,7 +6,7 @@
 
 L(D - E - S - A - B) = 4
 
-###### Distance
+#### Distance
 
 The **distance** between two vertices is the length of the shortest path between them.
 
