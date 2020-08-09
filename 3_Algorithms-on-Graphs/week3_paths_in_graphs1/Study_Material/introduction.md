@@ -43,4 +43,4 @@ The general property is that:
 
 The distance from the top vertex to any other vertex is the layer number of that vertex.
 
-This can be acchive by the *breadth first search*.
+This can be acchive by the **breadth first search**.
