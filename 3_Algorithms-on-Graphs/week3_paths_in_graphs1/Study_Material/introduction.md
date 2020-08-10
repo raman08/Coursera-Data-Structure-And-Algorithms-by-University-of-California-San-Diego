@@ -1,4 +1,4 @@
-###### Path and the Lenghts
+#### Path and the Lenghts
 
 **Length** of the path L(P) is the number of the edges in the path.
 
@@ -6,7 +6,7 @@
 
 L(D - E - S - A - B) = 4
 
-###### Distance
+#### Distance
 
 The **distance** between two vertices is the length of the shortest path between them.
 
@@ -43,4 +43,4 @@ The general property is that:
 
 The distance from the top vertex to any other vertex is the layer number of that vertex.
 
-This can be acchive by the *breadth first search*.
+This can be acchive by the **breadth first search**.
