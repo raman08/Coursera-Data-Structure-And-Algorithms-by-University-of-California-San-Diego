@@ -1,6 +1,7 @@
 ## Exact Pattren Matching
 
 **Input:** String T (Text) and P (Pattren)
+
 **Output:** All such positions in T (Text) where P (Pattren) appear as substring .
 
 ### Brute Force Approch
