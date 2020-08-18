@@ -3,6 +3,7 @@
 #### Problem Statement
 
 **Input:** A string Pattren, A string Text, and integer d.
+
 **Output:** All the postition in the text where the string Pattren appears as a substring with most d mismatched.
 
 #### Solution

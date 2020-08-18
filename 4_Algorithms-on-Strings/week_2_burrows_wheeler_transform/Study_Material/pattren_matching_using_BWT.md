@@ -52,7 +52,7 @@ BW_Matching(first_column, last_column, pattren, LastToFirst) {
 
 - The function LastToFirst(index) define the position of the symbol in index in first column.
 
-##### Probelem
+##### Problem
 
 - This algorithm is space-efficient but very time consumming.
 
