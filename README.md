@@ -219,12 +219,12 @@
 
     - [**Programming Assignment-4**](2_Data-Structures/week4_hash_tables/week4_hash_tables.pdf)
 
-    	1. -[X] [Phone Book](2_Data-Structures/week4_hash_tables/1_phone_book/1_phone_book.cpp)
-    	2. -[X] [Hash Chains](2_Data-Structures/week4_hash_tables/2_hash_chains/2_hashing_with_chains.cpp)
-    	3. -[X] [Hash Substring](2_Data-Structures/week4_hash_tables/3_hash_substring/3_find_pattren_in_text.cpp)
-    	4. -[ ] [Substring Equality](2_Data-Structures/week4_hash_tables/4_substring_equality)
-    	5. -[ ] [Longest Common Substring](2_Data-Structures/week4_hash_tables/5_longest_common_substring/)
-    	6. -[ ] [Matching With Mismatch](2_Data-Structures/week4_hash_tables/6_matching_with_mismatches/)
+    	1. - [X] [Phone Book](2_Data-Structures/week4_hash_tables/1_phone_book/1_phone_book.cpp)
+    	2. - [X] [Hash Chains](2_Data-Structures/week4_hash_tables/2_hash_chains/2_hashing_with_chains.cpp)
+    	3. - [X] [Hash Substring](2_Data-Structures/week4_hash_tables/3_hash_substring/3_find_pattren_in_text.cpp)
+    	4. - [ ] [Substring Equality](2_Data-Structures/week4_hash_tables/4_substring_equality)
+    	5. - [ ] [Longest Common Substring](2_Data-Structures/week4_hash_tables/5_longest_common_substring/)
+    	6. - [ ] [Matching With Mismatch](2_Data-Structures/week4_hash_tables/6_matching_with_mismatches/)
 
 - **Week-5** Binary Search Tree
 
