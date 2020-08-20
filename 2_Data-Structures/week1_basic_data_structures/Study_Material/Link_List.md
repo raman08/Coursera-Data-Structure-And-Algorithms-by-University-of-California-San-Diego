@@ -1,141 +1,186 @@
-## Singly-Linked List:
+## Singly-Linked List
 
-### PushFront(key)
-	PushFront(key) {
+#### PushFront(key)
 
-		node = new node
-		node.key = key
-		node.next = head
-		head = node
+```
+PushFront(key) {
 
-		if tail == nil:
-			tail = head
-	}
+	node = new node
+	node.key = key
+	node.next = head
+	head = node
 
-### PopFront(key)
+	if tail == nil:
+		tail = head
 
-	PopFront(key) {
+}
 
-		if head == nil:
-			Error!!!!!!!
+```
 
-		head = head.next
+#### PopFront(key)
 
-		if head == nil:
-			tail = nil
-	}
+```
 
-### PushBack(key)
+PopFront(key) {
 
-	PushBack(key) {
+	if head == nil:
+		Error!!!!!!!
 
-		node = new.node
-		node.key = key
-		node.next = nil
+	head = head.next
 
-		if tail == nil:
-			head = tail = node
+	if head == nil:
+		tail = nil
 
-		else:
-			tail.next = node
-			tail = node
-	}
+}
 
-### PopBack(key)
+```
 
-	PopBack() {
+#### PushBack(key)
 
-		if head == nil:
-			ERROR!!!!!!!!!!!!!
+```
+PushBack(key) {
 
-		if head = tail:
-			head = tail = nil
+	node = new.node
+	node.key = key
+	node.next = nil
 
-		else:
-			p = head
+	if tail == nil:
+		head = tail = node
 
-			while p.next.next != nil:
-				p = p.next
+	else:
+		tail.next = node
+		tail = node
 
-			p.next = nil
-			tail = p
-	}
+}
 
-### AddAfter(node, key)
+```
 
-	AddAfter(node, key) {
+#### PopBack(key)
 
-		node2 = new node
-		node2.key = key
-		node2.next = node.next
-		node.next = node2
+```
 
-		if tail == node
-			tail = node2
-	}
-	
+PopBack() {
+
+	if head == nil:
+		ERROR!!!!!!!!!!!!!
+
+	if head = tail:
+		head = tail = nil
+
+	else:
+		p = head
+
+		while p.next.next != nil:
+			p = p.next
+
+		p.next = nil
+		tail = p
+
+}
+
+```
+
+#### AddAfter(node, key)
+
+```
+
+AddAfter(node, key) {
+
+	node2 = new node
+	node2.key = key
+	node2.next = node.next
+	node.next = node2
+
+	if tail == node
+		tail = node2
+
+}
+
+```
+
 
 ## Double Linked List
 
-### PushBack(key)
+#### PushBack(key)
 
-	PushBack(key) {
+```
 
-		node = new node
-		node.key = key
-		node.next = nil
+PushBack(key) {
 
-		if tail == nil:
-			head = tail = node
-			node.next = node
-			node.prev = tail
-			tail = node
-	}
+	node = new node
+	node.key = key
+	node.next = nil
 
-### Popback()
+	if tail == nil:
+		head = tail = node
+		node.next = node
+		node.prev = tail
+		tail = node
 
-	Popback() {
+}
 
-		if head = nil:
-			ERROR!!!!!!!!!
+```
 
-		if head = tail:
-			head = tail = nil
-		else:
-			tail = tail.prev
-			tail.next = nil
-	}
+#### Popback()
 
-### AddAfter(node, key) 
+```
 
-	AddAfter(node, key) {
+Popback() {
 
-		node2 = new node
-		node2.key = key
-		node2.next = node.next
-		node.prev = node
-		node2.next = node2
+	if head = nil:
+		ERROR!!!!!!!!!
 
-		if node2.next != nil:
-			node2.next.prev = node2
+	if head = tail:
+		head = tail = nil
 
-		if tail == node
-			tail = node2
-	}
+	else:
+		tail = tail.prev
+		tail.next = nil
 
-### AddAfter(node, key) 
+}
 
-	AddAfter(node, key) {
+```
 
-		node2 = new node
-		node2.key = key
-		node2.next = node
-		node.prev = node.prev
-		node2.next = node2
+#### AddAfter(node, key)
 
-		if node2.next != nil:
-			node2.prev.next = node2
+```
 
-		if tail == node
-			tail = node2
-	}
+AddAfter(node, key) {
+
+	node2 = new node
+	node2.key = key
+	node2.next = node.next
+	node.prev = node
+	node2.next = node2
+
+	if node2.next != nil:
+		node2.next.prev = node2
+
+	if tail == node
+		tail = node2
+
+}
+
+```
+
+#### AddAfter(node, key)
+
+```
+
+AddAfter(node, key) {
+
+	node2 = new node
+	node2.key = key
+	node2.next = node
+	node.prev = node.prev
+	node2.next = node2
+
+	if node2.next != nil:
+		node2.prev.next = node2
+
+	if tail == node
+		tail = node2
+
+}
+
+```

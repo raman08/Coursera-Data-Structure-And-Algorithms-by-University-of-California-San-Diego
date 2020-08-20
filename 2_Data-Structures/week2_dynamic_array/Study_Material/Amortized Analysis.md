@@ -1,30 +1,33 @@
-# Defination
+## Amortized Analysis
 
-## Amotized Cost:
+### Amotized Cost:
 
-	Given a sequence of n operations, amortized cost is:
-		( Cost(n operations)/n )
+Given a sequence of n operations, amortized cost is:
 
-## Aggregate Method
+```( Cost (n operations) / n )```
 
-## Banker's Method
+### Aggregate Method
 
-	Charge extea for each cheap operation
-	Save the extra charges as tokens in your data structure
-	Use the tokens to pay expensive operations
+### Banker's Method
 
-## Physicist's Method
+- Charge extea for each cheap operation
+- Save the extra charges as tokens in your data structure
+- Use the tokens to pay expensive operations
 
-	define a potential function, phi which maps states of the data structure to integers:
+### Physicist's Method
 
-		phi(h0) = 0
-		phi(h[t]) >= 0
+Define a potential function, **phi** which maps states of the data structure to integers:
 
-	amortized cost for operation t:
-		c[t] + phi(h[t]) - phi(h[t - 1])
 
-	Choose phi so that:
-		if c[t] is small, the potential increses
-		if c[t] is large, the potential decreses by same scale
+- phi(h0) = 0
+- phi(h[t]) >= 0
 
-	The cost of n operation is sum(c[i]) i=0 to n
+**Amortized cost** for operation t:
+` c[t] + phi(h[t]) - phi(h[t - 1]) `
+
+Choose phi so that:
+
+- if c[t] is small, the potential increses
+- if c[t] is large, the potential decreses by same scale
+
+The cost of n operation is **sum(c[i])** from i=0 to n
