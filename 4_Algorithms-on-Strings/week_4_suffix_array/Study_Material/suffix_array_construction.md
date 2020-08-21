@@ -34,7 +34,8 @@ Given below the cyclic shift of length 4 of given string "ababaa$"
 
 #### SortChracters(S)
 
->Take string as an input and output the order of the string as output.
+- **Input:** String
+- **Output:** The order of the string as output.
 
 ```
 
@@ -85,7 +86,7 @@ SortChracters(S) {
 
 ##### ComputeCharClasses(S, order)
 
->Take the given string and the order of the string and give the class of the string.
+**Input:**  given string and the order of the string and give the class of the string.
 
 ```
 

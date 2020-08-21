@@ -1,109 +1,138 @@
-# Splay Tree
+## Splay Tree
 
 If there are some nodes which are search more frequently then othres. So idea here is to put those common node near the root.
 
-### Splay(N)
+#### Splay(N)
 
-	Splay(N) {
+```
 
-		Determine proper case
-		Apply Zig-Zig, Zig-Zag, Zig as appropriate
+Splay(N) {
 
-		if N.Parent != null:
-			Splay(N)
+	Determine proper case
+	Apply Zig-Zig, Zig-Zag, Zig as appropriate
 
-	}
-
-### STFind(k, R)
-
-	STFind(k, R) {
-
-		N = Find(k, R)
+	if N.Parent != null:
 		Splay(N)
 
-		return N
+}
 
-	}
+```
 
-### STInsert(k, R)
+#### STFind(k, R)
 
-	STInsert(k, R) {
+```
+STFind(k, R) {
 
-		Insert(k, R)
-		STFind(k, R)
+	N = Find(k, R)
+	Splay(N)
 
-	}
+	return N
 
-### STDelete(N)
+}
 
-	STDelete(N) {
+```
 
-		Splay(Next(N))
-		Splat(N)
+#### STInsert(k, R)
 
-		L = N.Left
-		R = N.Right
+```
+STInsert(k, R) {
 
-		R.Left = L
-		L.Parent = R
+	Insert(k, R)
+	STFind(k, R)
 
-		Root = R
+}
 
-		R.Parent = null
+```
 
-	}
+#### STDelete(N)
 
-### STSplit(R, x)
+```
+STDelete(N) {
 
-	STSplit(R, x) {
+	Splay(Next(N))
+	Splat(N)
 
-		N = Find(x, R)
+	L = N.Left
+	R = N.Right
 
-		if N.Key > x:
-			return CutLeft(R)
+	R.Left = L
+	L.Parent = R
 
-		else if N.Key < x:
-			return CutRight(R)
+	Root = R
 
-		else
-			return N.Left, N.Right
+	R.Parent = null
 
-	}
+}
 
-#### CutLeft(N)
+```
 
-	CutLeft(N) {
+#### STSplit(R, x)
 
-		L = N.Left
-		N.Left = null
-		n.Parent = null
+```
 
-		return L, N
+STSplit(R, x) {
 
-	}
+	N = Find(x, R)
 
-#### CutRightt(N)
+	if N.Key > x:
+		return CutLeft(R)
 
-	CutLeft(N) {
+	else if N.Key < x:
+		return CutRight(R)
 
-		L = N.Right
-		N.Left = null
-		n.Parent = null
+	else
+		return N.Left, N.Right
 
-		return L, N
+}
 
-	}
+```
 
-### STMerge(R1, R2)
+##### CutLeft(N)
 
-	STMerge(R1, R2) {
+```
 
-		N = Find(Infinity, R1)
-		SPlay(N)
+CutLeft(N) {
 
-		N.Right = R2
-		R2.Parent = N
+	L = N.Left
+	N.Left = null
+	n.Parent = null
 
-	}
+	return L, N
 
-`Runtime : ` The amortized cost of the all Splay tree operations is O( log(n) )
+}
+
+```
+
+##### CutRightt(N)
+
+```
+
+CutLeft(N) {
+
+	L = N.Right
+	N.Left = null
+	n.Parent = null
+
+	return L, N
+
+}
+
+```
+
+#### STMerge(R1, R2)
+
+```
+
+STMerge(R1, R2) {
+
+	N = Find(Infinity, R1)
+	SPlay(N)
+
+	N.Right = R2
+	R2.Parent = N
+
+}
+
+```
+
+**Runtime:** The amortized cost of the all Splay tree operations is O( log(n) )

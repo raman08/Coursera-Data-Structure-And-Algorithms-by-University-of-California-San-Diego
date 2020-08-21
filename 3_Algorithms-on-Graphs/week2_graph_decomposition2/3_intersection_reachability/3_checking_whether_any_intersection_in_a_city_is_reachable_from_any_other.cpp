@@ -1,110 +1,131 @@
-#include <iostream>
-#include <vector>
-#include <set>
 #include <algorithm>
+#include <iostream>
+#include <set>
+#include <stdexcept>
+#include <vector>
 
-using namespace std;
+// Class for directed Graphs
+class DiGraph
+{
 
+    vector<vector<int>> adj;
+    vector<vector<int>> _reverseadj;
 
-void explore(int node, vector<vector<int> > &adj, set<int> &visited){
+    size_t _size{0};
 
-    visited.insert(node);
+    void _explore(const int node, set<int> &visited)
+    {
 
-    for (auto a : adj[node]) {
+        visited.insert(node);
+        for (auto a : this->adj[node])
+        {
 
-        if (visited.find(a) == visited.end()) {
-
-            explore(a, adj, visited);
-
-        }
-
-    }
-
-}
-
-void reverse_explore(int node, vector<vector<int> > reverse_adj, set<int> &visited, vector<int> &ordering) {
-
-    visited.insert(node);
-
-    for (auto a : reverse_adj[node]) {
-
-        if (visited.find(a) == visited.end()) {
-
-            reverse_explore(a,reverse_adj, visited, ordering);
+            if (visited.find(a) == visited.end())
+                this->_explore(a, visited);
         }
     }
 
-    ordering.push_back(node);
+    void _reverse_explore(const int node, set<int> &visited, vector<int> &ordering)
+    {
 
-}
+        visited.insert(node);
+        for (auto a : this->_reverseadj[node])
+        {
+            if (visited.find(a) == visited.end())
+            {
+                this->_reverse_explore(a, visited, ordering);
+            }
+        }
 
-vector<int> get_reverse_post_order(vector<vector<int> > &adj, vector<vector<int> > &reverse_adj) {
+        ordering.push_back(node);
+    }
 
-    vector<int> ordering;
-    set<int> visited;
+public:
+    DiGraph(size_t size)
+        : adj(size, vector<int>()), _reverseadj(size, vector<int>()), _size(size) {}
 
-    for (int node = 0; node < adj.size(); ++node) {
+    void add_edges(const size_t m)
+    {
+        for (size_t j = 0; j < m; ++j)
+        {
+            size_t s, t;
+            cin >> s >> t;
 
-        if (visited.find(node) == visited.end()) {
+            this->adj[s - 1].push_back(t - 1);
 
-            reverse_explore(node, reverse_adj, visited, ordering);
-
+            this->_reverseadj[t - 1].push_back(s - 1);
         }
     }
 
-    reverse(ordering.begin(), ordering.end());
+    void display()
+    {
+        cout << "# nodes = " << this->_size << endl;
+        cout << "Adjacencies: " << endl;
 
-    return ordering;
+        for (size_t node = 0; node < this->_size; ++node)
+        {
+            cout << node + 1 << " -> ";
+            for (auto a : this->adj[node])
+            {
+                cout << a + 1 << " ";
+            }
 
-}
-
-size_t number_of_strong_components(vector<vector<int> > adj, vector<vector<int> > reverse_adj) {
-
-    if (adj.size() == 0) {
-        return 0;
-    }
-
-    set<int> visited;
-
-    size_t ncomponents = 0;
-
-    auto node_list = get_reverse_post_order(adj, reverse_adj);
-
-    for (auto node : node_list) {
-
-        if (visited.find(node) == visited.end()) {
-
-            explore(node, adj, visited);
-
-            ncomponents++;
-
+            cout << endl;
         }
     }
 
-    return ncomponents;
+    vector<int> get_reverse_post_order()
+    {
 
-}
+        vector<int> ordering;
+        set<int> visited;
 
-int main() {
+        for (int node = 0; node < this->_size; ++node)
+        {
 
-	int n, m;
-	cin >> n >> m;
+            if (visited.find(node) == visited.end())
+            {
+                this->_reverse_explore(node, visited, ordering);
+            }
+        }
 
-	vector<vector<int> > adj(n, vector<int>());
+        reverse(ordering.begin(), ordering.end());
 
-	vector<vector<int> > reverse_adj(n, vector<int>());
+        return ordering;
+    }
 
+    size_t number_of_strong_components()
+    {
+        if (this->_size == 0)
+        {
+            return 0;
+        }
+        set<int> visited;
+        size_t ncomponents = 0;
 
-	for (int i = 0; i < m; i++) {
+        auto node_list = get_reverse_post_order();
+        for (auto node : node_list)
+        {
 
-		int x, y;
-		cin >> x >> y;
+            if (visited.find(node) == visited.end())
+            {
+                this->_explore(node, visited);
+                ncomponents++;
+            }
+        }
 
-		adj[x - 1].push_back(y - 1);
-		reverse_adj[y - 1].push_back(x - 1);
+        return ncomponents;
+    }
+};
 
-	}
+int main()
+{
+    size_t n, m;
+    cin >> n >> m;
 
-	cout << number_of_strong_components( adj, reverse_adj);
+    DiGraph graph(n);
 
+    graph.add_edges(m);
+
+    cout << graph.number_of_strong_components() << endl;
 }

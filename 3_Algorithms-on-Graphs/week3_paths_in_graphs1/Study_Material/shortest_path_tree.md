@@ -1,6 +1,6 @@
 # Shortest Path Tree
 
-*Shortest Path Tree* is the tree contaning all the nodes and with parent nodes.
+**Shortest Path Tree** is the tree contaning all the nodes and with parent nodes.
 
 In the given image, on left hand side there is a undirected graph and on the right there is the shortest path tree of the respected graph.
 
@@ -10,9 +10,9 @@ In the given image, on left hand side there is a undirected graph and on the rig
 The shortest path tree is indeed a tree, i.e. it doesnt cantain the cycles.
 
 
-### Implementation
+## Implementation
 
-##### shortest_path_tree(G, s)
+#### shortest_path_tree(G, s)
 
 ```
 
@@ -42,9 +42,11 @@ shortest_path_tree(G, s) {
 
 ```
 
-##### reconstruct_path(s, u, prev)
+#### reconstruct_path(s, u, prev)
 
-> s stores the starting node, u is the end node and prev is the shortest path tree.
+- s is the starting node
+- u is the end node
+- prev is the shortest path tree.
 
 ```
 

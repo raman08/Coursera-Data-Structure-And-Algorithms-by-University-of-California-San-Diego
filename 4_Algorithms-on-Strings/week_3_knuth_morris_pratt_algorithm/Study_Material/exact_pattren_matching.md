@@ -10,10 +10,7 @@ Scan the text letter by letter till the pattren is found and continue the search
 
 ##### Problems
 
-- Time of srach is O(|T|.|P|).
+- Time of search is O(|T|.|P|).
 - Need to search all the text.
 
 We can improve the search by skipping the postions where we know the pattren can't be found.
-
-</br>
-</br>

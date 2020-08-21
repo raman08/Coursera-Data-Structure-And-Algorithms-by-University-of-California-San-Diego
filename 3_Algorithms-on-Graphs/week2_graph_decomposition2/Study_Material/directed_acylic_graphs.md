@@ -22,7 +22,7 @@ We an still run DFS in directed graphs.
 * explore(v) finds all vertices rechable from v.
 * Can still compute pre- and post-odernings.
 
-#### Defination
+#### Cycle in Graph
 
 A **cycle** in a graph G is a sequence of vertices v1, v2, v3, ..... , v{n} so that (v1, v2), (v2, v3), (v{n - 1}, v{n}), (v{n}, v1) are all edges.
 
@@ -39,22 +39,20 @@ A directed graph G is a **Directed Acylic Graph** (or *DAG*) if it has no cycles
 
 * Any DAG can be lineary order.
 
-### Source and Sink
-
-#### Defination
+####Source and Sink
 
 1. A **source** is a vertex with no incomming edges.
 2. A **sink** is a vertex with no outgoing edges.
 
 
-## Topological Sort
+### Topological Sort
 
 Converting a graph G into linear order.
 
 ###### Idea
 
 - Find sink
-- put at the end of the order.
+- Put at the end of the order.
 - Remove it from the graph.
 - Repeat.
 
@@ -83,7 +81,7 @@ LinearOrder_Native(G) {
 
 ```
 
-`Runtime: ` O($|V|^2$)
+**Runtime:** O($|V|^2$)
 
 #### Topological_sort(G)
 

@@ -1,12 +1,10 @@
-# Exploring graphs
+## Exploring graphs
 
-## Paths
+### Paths
 
-## Defination
+A **path in a graph** G is a sequence of the vertices v0, v1, ...  that for all i, (v<i>, v<i + 1>) is an edge of the G.
 
-A path in a graph G is a sequence of the vertices v0, v1, ...  that for all i, (v<i>, v<i + 1>) is an edge of the G.
-
-### Rechability
+#### Rechability
 
 **INPUT :** Graph G and vertex s
 
@@ -32,14 +30,14 @@ Components(s) {
 ```
 
 To keep track of the vertices found:
-Give exch vertix boolean variable visited(v).
+- Give each vertix boolean variable visited(v).
 
-Keep a list of the vertices with edges left to check.
-This will end up getting hidden in the program stack.
+- Keep a list of the vertices with edges left to check.
+- This will end up getting hidden in the program stack.
 
 We will explore new edges in depth first order.
 
- Explore function find all the vertices which can be reached by the given ndoe.
+- **Explore function** find all the vertices which can be reached by the given ndoe.
 
 #### Explore(v)
 
@@ -104,7 +102,7 @@ Assume that u visited before v. Then there are two possible cases:
 	DFS(G): O(|V| + |E|) // Linear Time Search
 
 
-## Connectivity
+### Connectivity
 
 ##### Theorm
 

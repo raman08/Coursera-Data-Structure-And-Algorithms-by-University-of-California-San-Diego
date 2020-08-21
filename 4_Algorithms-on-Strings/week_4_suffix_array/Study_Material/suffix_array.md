@@ -7,6 +7,8 @@
 </br>
 </br>
 
+#### Lexographically Order
+
 String S is lexographically smaller then string T if S != T and there exist such i that:
 
 - 0<= i<= |S|
@@ -30,7 +32,6 @@ To solve this problem we add a special chracter '$' at end of the S.
 **S = ababaa** => **S' = ababba$**
 
 - *Suffixes  of S in lexicographical order:*
-
 	- a
 	- aa
 	- abaa

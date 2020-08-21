@@ -12,32 +12,21 @@ A priority queue is a generalization of a queue where each element is assigned a
 
 Priority Queue is an abstract data type support the following main operations:
 
-Insert(p): add a new element with priority p
-
-ExtractMax(): extracts an element with maximun priority
+- **Insert(p):** add a new element with priority p
+- **ExtractMax():** extracts an element with maximun priority
 
 #### Additional Operations
 
-Remove(it) : removes an element pointed by iterator it
+- **Remove(it):** removes an element pointed by iterator it
+- **GetMax():** returns an element with maximun priority (without changing anything)
+- **ChangePriority(it, p):** changes the priority of an element pointed bt it to p
 
-GetMax() : returns an element with maximun priority (without changing anything)
-
-ChangePriority(it, p) : changes the priority of an element pointed bt it to p
-
-## Implementations
-
-1) Unsorted array/list
-	
-	Insert:     O(1)
-	ExtractMax: O(n)
-
-2) Sorted array/list
-	
-	Insert:     O(n)
-	ExtractMax: O(1)
+#### Running Time
 
 
-3) Binary Heap
-	
-	Insert:     O( log(n) )
-	ExtractMax: O( log(n) )
+| Implementation           | Insertion Time | ExtractMax Time |
+|---                       |---             |---              |
+| **Unsorted Array/ List** | O(1)           | O(n)            |
+| **Sorted Array/ List**   | O(n)           | O(1)            |
+| **Binary Heap**          | O( log(n) )    |O( log(n) )      |
+

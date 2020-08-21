@@ -1,156 +1,157 @@
-# Robin Karp's Algorithms
+## Robin Karp's Algorithms
 
-~~~
+
 
 For some hash function h
 
-If h(P) != h(S), then definately P != S
+- If h(P) != h(S), then definately P != S
 
-If h(P) = h(S), call AreEqual(P, S)
+- If h(P) = h(S), call AreEqual(P, S)
 
-Use polynomical hash family P<p> with prime p
+Use polynomical hash family P\<p> with prime p
 
-If p != S, the probability
+- If p != S, the probability
 
-			 P[h(p) = h(S)] <= |P|/p
+	- P[h(p) = h(S)] <= |P| / p
+		for polynomial hashing.
 
-			 			for polynomial hashing.
 
-~~~
+#### RobinKarp(T, P)
 
-### RobinKarp(T, P)
+```
+RobinKarp(T, P) {
 
-	RobinKarp(T, P) {
+  p = big prime
+  x = random(1, p - 1)
 
-		p = big prime
-		x = random(1, p - 1)
+  result = empty list
 
-		result = empty list
+  pHash = PolyHash(P, p, x)
 
-		pHash = PolyHash(P, p, x)
+  for i from 0 to |T| - |P|:
 
-		for i from 0 to |T| - |P|:
+  	tHash = PolyHash(T[i .. i + |P| - 1], p, x)
 
-			tHash = PolyHash(T[i .. i + |P| - 1], p, x)
+  	if pHash != tHash:
+  		continue
 
-			if pHash != tHash:
-				continue
+  	if AreEqual(T[i .. i + |P| - 1], p)
+  		result.append(i)
 
-			if AreEqual(T[i .. i + |P| - 1], p)
-				result.append(i)
+  return result
 
-		return result
+}
 
-	}
+```
 
 #### Running Time Estimation
 
-~~~
 
-Running time without AreEqual
+- Running time without AreEqual
 
-	h(p) is computed in O(|P|)
+	- h(p) is computed in O(|P|)
 
-	h(T[i .. i + |P| - 1]) is computed in O(|P|), |T| - |P| + 1 times
+	- h(T[i .. i + |P| - 1]) is computed in O(|P|), |T| - |P| + 1 times
 
-	Final Time: O(|P|) + O( (|T| - |P| + 1) * |P|) = O(|T| * |P|)
+	- **Final Time:** O(|P|) + O( (|T| - |P| + 1) * |P|) = O(|T| * |P|)
 
-AreEqual Running time
+- AreEqual Running time
 
-	AreEqual is computed in O(|P|).
+	- AreEqual is computed in O(|P|).
 
-	AreEqual is called only if string are equal or there is collosion in hashing but we can reduce collision by selecting p >> |T|*|P|.
+	- AreEqual is called only if string are equal or there is collosion in hashing but we can reduce collision by selecting p >> |T|*|P|.
 
-Total Running Time:
+- Total Running Time:
 
-	If P is found q time in T then total time spend in AreEqual is O((q + ( (|T| - |P| + 1)/p )) * |P|) = O(q|P|) for p >> |T|||P
+	- If P is found q time in T then total time spend in AreEqual is O((q + ( (|T| - |P| + 1)/p )) * |P|) = O(q|P|) for p >> |T|||P
 
-	Total running time is
+	- **Total running time:** O(|T||P|) + O(q|P|) = O(|T||P|) as q <= |T|
 
-		O(|T||P|) + O(q|P|) = O(|T||P|) as q <= |T|
-
-~~~
 
 
 `Notaion: h(T[i .. i + |P| - 1]) by H[i]`
 
-## Optimization
+### Optimization
 
-	H[i + 1] = sum(T[j] * x^(j - i - 1)) mod p
+- H[i + 1] = sum(T[j] * x^(j - i - 1)) mod p
 					for all i + 1 <= j <= i + |P|
 
-	H[i] = sum(T[j] * x^(j - i)) mod p
-					for all i <= j <= i + |P|
 
-		 = sum(T[j] * x^(j - i) + T[i] - (T[i + |P|] * x^|P|)) mod p
-					for all i + 1 <= j <= i + |P|
+- H[i] = sum(T[j] * x^(j - i)) mod p
+		for all i <= j <= i + |P|
 
-		 = x * sum(T[j] * x^(j - i - 1) + (T[i] - (T[i + |P|] * x^|P|))) mod p
-					for all i + 1 <= j <= i + |P|
+	= sum(T[j] * x^(j - i) + T[i] - (T[i + |P|] * x^|P|)) mod p
+			for all i + 1 <= j <= i + |P|
 
-		 = x * H[i + 1] + (T[i] - T[i + |P|] * x^|P|) mod p
+	= x * sum(T[j] * x^(j - i - 1) + (T[i] - (T[i + |P|] * x^|P|))) mod p
+			for all i + 1 <= j <= i + |P|
 
-### PrecomputeHashes(T, |P|, p, x)
+	= x * H[i + 1] + (T[i] - T[i + |P|] * x^|P|) mod p
 
-	PrecomputeHashes(T, |P|, p, x) {
+#### PrecomputeHashes(T, |P|, p, x)
 
-		H = array[|T| - |P| + 1]
-		S = T[|T| - |P| .. |T| - 1]
+```
+PrecomputeHashes(T, |P|, p, x) {
 
-		H[|T| - |P|] = PolyHash(S, p, x)
+  H = array[|T| - |P| + 1]
+  S = T[|T| - |P| .. |T| - 1]
 
-		y = 1
+  H[|T| - |P|] = PolyHash(S, p, x)
 
-		for i from 1 to |P|:
-			y = (y * x) mod p
+  y = 1
 
-		for i from |T| - |P| - 1 down to 0:
-			H[i] = (x * H[i + 1] + T[i] - (y * T[i + |P|]) ) mod p
+  for i from 1 to |P|:
+  	y = (y * x) mod p
 
-		return H
+  for i from |T| - |P| - 1 down to 0:
+  	H[i] = (x * H[i + 1] + T[i] - (y * T[i + |P|]) ) mod p
 
-	}
+  return H
 
-`Running time of PrecomputeHashes is O(|P| + |P| + |T| - |P|) = O(|T| - |P|)`
+}
 
-## Improved RabinKarp Algorithm
+```
 
-### RabinKarp(T, P)
+**Running time:** O(|P| + |P| + |T| - |P|)  =  O(|T| - |P|)
 
-	RobinKarp(T, P) {
+### Improved RabinKarp Algorithm
 
-		p = big prime
-		x = random(1, p - 1)
+#### RabinKarp(T, P)
 
-		result = empty list
+```
 
-		pHash = PolyHash(P, p, x)
+RobinKarp(T, P) {
 
-		H = PrecomputeHashes(T, |P|, p, x)
+  p = big prime
+  x = random(1, p - 1)
 
-		for i from 0 to |T| - |P|:
+  result = empty list
 
-			if pHash != H[i]:
-				continue
+  pHash = PolyHash(P, p, x)
 
-			if AreEqual(T[i .. i + |P| - 1], p)
-				result.append(i)
+  H = PrecomputeHashes(T, |P|, p, x)
 
-		return result
+  for i from 0 to |T| - |P|:
 
-	}
+  	if pHash != H[i]:
+  		continue
+
+  	if AreEqual(T[i .. i + |P| - 1], p)
+  		result.append(i)
+
+  return result
+
+}
+
+```
 
 #### Running Time Estimation for Optimized Algorithm
 
-~~~
 
-	h(p) is computed in O(|P|)
+- h(p) is computed in O(|P|)
 
-	PrecomputeHashes(T, |P|, p, x) runs in O(|T| - |P|)
+- PrecomputeHashes(T, |P|, p, x) runs in O(|T| - |P|)
 
-	AreEqual is computed in O(q*|P|) where q is the number of occurrences of P in T
+- AreEqual is computed in O(q*|P|) where q is the number of occurrences of P in T
 
-Total Running Time:
-	O(|T| + (q + 1) * |P|)
-
-~~~
+- **Total Running Time:**	O(|T| + (q + 1) * |P|)
