@@ -4,6 +4,8 @@ Breadth First Search in a Graph is same as in the tree.
 
 The only point to remenber is that there can be some nodes for which graph repeats itself.
 
+#### Steps
+
 In this we :
 
 - initizalized all the distance from a given node to infinity.
@@ -24,7 +26,8 @@ When we need to process any node we simply dequeue it, process it and add next l
 
 ##### BFS(G, s)
 
-> G is the graph and s os the starting node.
+- G is the graph
+- s is the starting node.
 
 ```
 

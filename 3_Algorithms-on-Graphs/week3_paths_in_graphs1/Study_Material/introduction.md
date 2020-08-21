@@ -23,7 +23,7 @@ d(C, A) = inf
 
 First we will study to find the distance of the given node from all the other node in the graph.
 
-This can be achive by converted the graph to the distance layer.
+- This can be achive by converted the graph to the distance layer.
 
 ![Distance Graph](images/distance_graph.png)
 

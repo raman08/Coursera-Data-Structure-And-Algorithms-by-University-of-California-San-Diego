@@ -11,7 +11,7 @@ Find the fastest route from a node to other in terms of the weights/times on the
 - Any subpath of an optimal path is also optimal.
 	* If S -> ... -> u -> t is a shortest path from S to t, then
 
-			- d(S, t) = d(S, u) + w(u, t)
+		- d(S, t) = d(S, u) + w(u, t)
 
 - dist[v] will be an upper bound on the actual distance (<=) on the actual distance from S to v.
 

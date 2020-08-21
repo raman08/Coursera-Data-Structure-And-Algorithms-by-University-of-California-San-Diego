@@ -4,7 +4,7 @@
 
 * Start with an empty data structure  X. {Priority Queue is recomended}
 * x is always a subtree, grows one by one at each itreration.
-* we add a lightest edge between a vertex of the tree and a vertex not in the tree.
+* We add a lightest edge between a vertex of the tree and a vertex not in the tree.
 * This is very similar to the Dihkstra's Algorithm.
 
 ### Implementation
@@ -40,8 +40,6 @@ Prim(G) {
 
 * **Running Time:** |V|. T(ExtractMin) + |E|. T(ChangePriority)
 
-* for array based implementation, running time is :
-	- |V|. O(|V|) + |E|. O(1) = O($|V|^2$)
+* For **array based implementation**, running time is : |V|. O(|V|) + |E|. O(1) = O($|V|^2$)
 
-* for binary heap-based implementation, the running time is:
-	- O( (|V| + |E|). log(|V|) ) = O( |E|. log(|V|) )
+* for **binary heap-based implementation**, the running time is: O( (|V| + |E|). log(|V|) ) = O( |E|. log(|V|) )

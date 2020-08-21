@@ -42,11 +42,8 @@ Kruskal(G) {
 
 #### Running Time
 
-- Sorting edges
- 	* O(|E|. ( log(|V|)) )
+- Sorting edges: O(|E|. ( log(|V|)) )
 
-- Processing Edges
-	* 2|E|. T(Find) + |V|. T(Union) = O( (|E|+|V|). log(|V| ) = O(|E|. log(|V|)) )
+- Processing Edges: 2|E|. T(Find) + |V|. T(Union) = O( (|E|+|V|). log(|V| ) = O(|E|. log(|V|)) )
 
-* **Total  Running Time**
- 	- O(|E|. log(|V|) )
+* **Total  Running Time**: O(|E|. log(|V|) )

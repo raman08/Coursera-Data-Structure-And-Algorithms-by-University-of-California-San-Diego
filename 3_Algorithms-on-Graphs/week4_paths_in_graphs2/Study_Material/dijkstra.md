@@ -47,8 +47,8 @@ The running time will actually depend on the data structue used in implementatio
 
 * **Array:**
 
-	- O(|V| + |$V^2$| + |E|) = O(|$V^2$|)
+	+ O(|V| + |$V^2$| + |E|) = O(|$V^2$|)
 
 * **Binary Heap/ Priority Queue**
 
- 	-  O(|V| + |V|( log(|V|)) + |E|( log(|V|) ) ) = O( (|V| + |E|) (log(|V|) ))
+ 	+  O(|V| + |V| . log(|V|) ) + |E| . log(|V|) ) ) = O( (|V| + |E|) (log(|V|) ))

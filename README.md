@@ -254,3 +254,104 @@
     	3. - [X] [Is BST Advance](2_Data-Structures/week5_binary_search_trees/3_is_it_a_binary_search_tree_advance/3_is_it_a_binary_search_tree_hard.cpp)
     	4. - [ ] [Set Range Sum](2_Data-Structures/week5_binary_search_trees/4_set_range_sum/)
     	5. - [ ] [Rope](2_Data-Structures/week5_binary_search_trees/5_rope/)
+
+## 3. Algorithms On Graphs
+
+- **Week-1** Graph Decomposition Part-1
+
+	- [**List of Contents**](3_Algorithms-on-Graphs/week1_graph_decomposition1/Study_Material/)
+
+		1. [Graph Basics](3_Algorithms-on-Graphs/week1_graph_decomposition1/Study_Material/09_graph_decomposition_1_basics.pdf)
+		2. [Graph Representation](3_Algorithms-on-Graphs/week1_graph_decomposition1/Study_Material/09_graph_decomposition_2_representations.pdf)
+
+			+ [Undirected Graphs Basics And Representation](3_Algorithms-on-Graphs/week1_graph_decomposition1/Study_Material/graphs_basic.md)
+
+		3. [Exploring Graphs](3_Algorithms-on-Graphs/week1_graph_decomposition1/Study_Material/09_graph_decomposition_3_explore.pdf)
+
+		4. [Graph Connectivity](3_Algorithms-on-Graphs/week1_graph_decomposition1/Study_Material/09_graph_decomposition_4_connectivity.pdf)
+
+		5. [Pre-order and Post-order](3_Algorithms-on-Graphs/week1_graph_decomposition1/Study_Material/09_graph_decomposition_5_pre-and-post-orders.pdf)
+
+			+ [Implementation](3_Algorithms-on-Graphs/week1_graph_decomposition1/Study_Material/exploring_undirected_graphs.md)
+
+	- [**Programming Assignment-1**](3_Algorithms-on-Graphs/week1_graph_decomposition1/week1_graph_decomposition1.pdf)
+
+		1. - [X] [Rechability](3_Algorithms-on-Graphs/week1_graph_decomposition1/1_finding_exit_from_maze/1_finding_exit_from_a_maze.cpp)
+		2. - [X] [Connected Components](3_Algorithms-on-Graphs/week1_graph_decomposition1/2_adding_exits_to_maze/2_adding_exit_to_maze.cpp)
+
+
+- **Week-2** Graph Decomposition Part-2
+
+	- [**List of Contents**](3_Algorithms-on-Graphs/week2_graph_decomposition2/Study_Material/)
+
+		1. [DAG'S Basics](3_Algorithms-on-Graphs/week2_graph_decomposition2/Study_Material/09_graph_decomposition_6_dags.pdf)
+
+		2. [Topological Sort](3_Algorithms-on-Graphs/week2_graph_decomposition2/Study_Material/09_graph_decomposition_7_topological-sort.pdf)
+
+			+ [Implementation](3_Algorithms-on-Graphs/week2_graph_decomposition2/Study_Material/directed_acylic_graphs.md)
+
+		3. [Strongly Connected Components](3_Algorithms-on-Graphs/week2_graph_decomposition2/Study_Material/09_graph_decomposition_8_strongly-connected-components.pdf)
+
+		4. [Finding Strongly Connected Components](3_Algorithms-on-Graphs/week2_graph_decomposition2/Study_Material/09_graph_decomposition_9_computing-sccs.pdf)
+
+			+ [Implementation](3_Algorithms-on-Graphs/week2_graph_decomposition2/Study_Material/connectivity_in_graph.md)
+
+	- [**Programming Assignment-2**](3_Algorithms-on-Graphs/week2_graph_decomposition2/week2_graph_decomposition2.pdf)
+
+		1. - [X] [Cs Curriculum](3_Algorithms-on-Graphs/week2_graph_decomposition2/1_cs_curriculum/1_checking_consistency_of_cs_curriculum.cpp)
+
+		2. - [X] [Order of Course](3_Algorithms-on-Graphs/week2_graph_decomposition2/2_order_of_courses/2_determining_an_order_of_courses.cpp)
+
+		3. - [X] [Intersection Rechability](3_Algorithms-on-Graphs/week2_graph_decomposition2/3_intersection_reachability/3_checking_whether_any_intersection_in_a_city_is_reachable_from_any_other.cpp)
+
+- **Week-3** Path in Graphs Part-1
+
+	- [**List of Contents**](3_Algorithms-on-Graphs/week3_paths_in_graphs1/Study_Material/)
+
+		1. [Shortest Path in Graph](3_Algorithms-on-Graphs/week3_paths_in_graphs1/Study_Material/10_shortest_paths_in_graphs_1_bfs.pdf)
+
+			+ [Introduction](3_Algorithms-on-Graphs/week3_paths_in_graphs1/Study_Material/introduction.md)
+
+			+ [Breadth First Search](3_Algorithms-on-Graphs/week3_paths_in_graphs1/Study_Material/breadth_first_search.md)
+
+			+ [Shortest Path Tree](3_Algorithms-on-Graphs/week3_paths_in_graphs1/Study_Material/shortest_path_tree.md)
+
+	- [**Programming Assignment-3**](3_Algorithms-on-Graphs/week3_paths_in_graphs1/week3_paths_in_graphs1.pdf)
+
+		1. -[X] [Flight Segments](3_Algorithms-on-Graphs/week3_paths_in_graphs1/2_bipartite/2_biparted.cpp)
+
+		2. -[X] [Biparted](3_Algorithms-on-Graphs/week3_paths_in_graphs1/2_bipartite/2_biparted.cpp)
+
+- **Week-4** Path in Graph Part-2
+
+	- [**List of Contents**](3_Algorithms-on-Graphs/week4_paths_in_graphs2/Study_Material/)
+
+		1. [Dijkstra Algorithms](3_Algorithms-on-Graphs/week4_paths_in_graphs2/Study_Material/10_shortest_paths_in_graphs_2_dijkstra.pdf)
+
+			+ [Fastest Route](3_Algorithms-on-Graphs/week4_paths_in_graphs2/Study_Material/fastest_route.md)
+
+			+ [Implementation of Dijkstra Algorithm](3_Algorithms-on-Graphs/week4_paths_in_graphs2/Study_Material/dijkstra.md)
+
+		2. [Bellman Ford Algorithm](3_Algorithms-on-Graphs/week4_paths_in_graphs2/Study_Material/10_shortest_paths_in_graphs_3_bellman_ford.pdf)
+
+			+ [Implementation](3_Algorithms-on-Graphs/week4_paths_in_graphs2/Study_Material/bellman_ford_algorithm.md)
+
+	- [**Programming Assignment-4**](3_Algorithms-on-Graphs/week4_paths_in_graphs2/week4_paths_in_graphs2.pdf)
+
+		1. - [X] [Minimun Flight Cost](3_Algorithms-on-Graphs/week4_paths_in_graphs2/1_minimum_flight_cost/1_minimum_fligh_cost.cpp)
+
+		2. - [X] [Detecting Anomalites](3_Algorithms-on-Graphs/week4_paths_in_graphs2/2_detecting_anomalies/2_decting_anomalities.cpp)
+
+		3. - [X] [Exchanging Money](1_Algorithmic-Toolbox/week1_programming_challenges/2_maximum_pairwise_product/2_max_pairwise_product.cpp)
+
+- **Week-5** Spanning Tree
+
+	- [**List of Contents**](3_Algorithms-on-Graphs/week5_spanning_trees/Study_Material/)
+
+		1. [Minimum Spanning Tree](3_Algorithms-on-Graphs/week5_spanning_trees/Study_Material/11_1_minimum_spanning_trees.pdf)
+
+			+ [MST introduction](3_Algorithms-on-Graphs/week5_spanning_trees/Study_Material/minimum_spanning_tree.md)
+
+			+ [Kruskal's Algorithm](3_Algorithms-on-Graphs/week5_spanning_trees/Study_Material/kruskals_algorithm.md)
+
+			+ [Prim's Algorithms](3_Algorithms-on-Graphs/week5_spanning_trees/Study_Material/prims_algorithm.md)

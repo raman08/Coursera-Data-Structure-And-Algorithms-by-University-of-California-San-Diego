@@ -46,7 +46,7 @@ EasyScc(G) {
 
 ```
 
-`Runtime: ` O($|V|^2$ + |V||E|)
+**Runtime:** O($|V|^2$ + |V||E|)
 
 We need faster algorithm from this one.
 
@@ -105,4 +105,4 @@ SCCs_effective(G) {
 
 ```
 
-`Runtime: ` O(|V| + |E|)
+**Runtime:** O(|V| + |E|)
