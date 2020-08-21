@@ -437,3 +437,10 @@
 
 			+ [LCP Array Introduction](4_Algorithms-on-Strings/week_4_suffix_array/Study_Material/lcp_introduction.md)
 			+ [Suffix Tree](4_Algorithms-on-Strings/week_4_suffix_array/Study_Material/suffix_tree.md)
+
+	- [**Programming Assignment-3**](4_Algorithms-on-Strings/week_4_suffix_array/Programming-Assignment-3.pdf)
+
+		1. - [X] [KMP](4_Algorithms-on-Strings/week_4_suffix_array/1_kmp/1_pattren_matching.cpp)
+		2. - [X] [Suffix Array Long](4_Algorithms-on-Strings/week_4_suffix_array/2_suffix_array_long/2_suffix_array_long_string.cpp)
+		3. - [ ] [Suffix Array Matching](4_Algorithms-on-Strings/week_4_suffix_array/3_suffix_array_matching/)
+		4. - [X] [Suffix Tree From Array](4_Algorithms-on-Strings/week_4_suffix_array/4_suffix_tree_from_array/4_suffix_tree.cpp)
