@@ -2,7 +2,7 @@
 
 #### Steps
 
-- Create a new string S = P + '$' + T, where $ is the special chracter absent from both P and T.
+- Create a new string S = P + '\$' + T, where $ is the special chracter absent from both P and T.
 - Compute prefix function s for string S.
 - For all position i such that i > |P| and s(i) = |P|, add i - 2.|P| to the output.
 

@@ -1,4 +1,6 @@
 
+### Improving Tire Representation
+
 We see that the tire reprentation for the list of the pattren is not practicle.
 
 To remove this problem we can use **suffix tire**.
@@ -33,6 +35,7 @@ Given image gives the postion of the ana in the text panamabananas.
 
 ![Ana](images/finding_ana.png)
 
+#### Problem
 
 This method result in the faster searching but high memory consomption.
 

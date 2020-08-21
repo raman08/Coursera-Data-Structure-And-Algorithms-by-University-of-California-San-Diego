@@ -355,3 +355,85 @@
 			+ [Kruskal's Algorithm](3_Algorithms-on-Graphs/week5_spanning_trees/Study_Material/kruskals_algorithm.md)
 
 			+ [Prim's Algorithms](3_Algorithms-on-Graphs/week5_spanning_trees/Study_Material/prims_algorithm.md)
+
+	- [**Programming Assignment-5**](3_Algorithms-on-Graphs/week5_spanning_trees/week5_spanning_trees.pdf)
+
+		1. - [X] [Connecting Points](3_Algorithms-on-Graphs/week5_spanning_trees/1_connecting_points/1_connecting_points.cpp)
+
+		2. - [X] [Clustering](3_Algorithms-on-Graphs/week5_spanning_trees/2_clustering/2_clustering.cpp)
+
+## 4. Algorithms On String
+
+- **Week-1** Suffix Tree
+
+	- [**List of Contents**](4_Algorithms-on-Strings/week_1_suffix_tree/Study_Material/)
+
+		1. [Suffix Tree](4_Algorithms-on-Strings/week_1_suffix_tree/Study_Material/Suffix_Trees_Reduced_1.pdf)
+
+			+ [Introduction](4_Algorithms-on-Strings/week_1_suffix_tree/Study_Material/introduction.md)
+
+			+ [Suffix Tire](4_Algorithms-on-Strings/week_1_suffix_tree/Study_Material/suffix_tire.md)
+
+			+ [Suffix Tree](4_Algorithms-on-Strings/week_1_suffix_tree/Study_Material/suffix_tree.md)]
+
+	- [**Programming Assignment-1**](4_Algorithms-on-Strings/week_1_suffix_tree/Programming-Assignment-1.pdf)
+
+		1. - [X] [Tire](4_Algorithms-on-Strings/week_1_suffix_tree/1_trie/1_tire_construction.cpp)
+
+		2. - [X] [Tire Matching](4_Algorithms-on-Strings/week_1_suffix_tree/2_trie_matching/2_tri_matching.cpp)
+
+		3. - [ ] [Tire Matching Extended](4_Algorithms-on-Strings/week_1_suffix_tree/3_trie_matching_extended/)
+
+		4. - [X] [Suffix Tree](4_Algorithms-on-Strings/week_1_suffix_tree/4_suffix_tree/4_suffix_tree.cpp)
+
+		5. - [X] [Non Shared Substring](4_Algorithms-on-Strings/week_1_suffix_tree/5_non_shared_substring/5_non_shared_substring.cpp)
+
+- **Week-2** Burrows Wheeler Transformation
+
+	- [**List of Contents**](4_Algorithms-on-Strings/week_2_burrows_wheeler_transform/Study_Material/)
+
+		1. [BWT in Pattern Matching](4_Algorithms-on-Strings/week_2_burrows_wheeler_transform/Study_Material/BWT-Suffix-Arrays-Reduced.pdf)
+
+			+ [Introduction](4_Algorithms-on-Strings/week_2_burrows_wheeler_transform/Study_Material/burrows_wheeler_tramsformation.md)
+
+			+ [Pattren Matching Using BWT](4_Algorithms-on-Strings/week_2_burrows_wheeler_transform/Study_Material/pattren_matching_using_BWT.md)
+
+			+ [Suffix Array](4_Algorithms-on-Strings/week_2_burrows_wheeler_transform/Study_Material/suffix_array.md)
+
+			+ [Approximate Pattren Matching](4_Algorithms-on-Strings/week_2_burrows_wheeler_transform/Study_Material/approximate_pattren_matching.md)
+
+	- [**Programming Assignment-2**](4_Algorithms-on-Strings/week_2_burrows_wheeler_transform/Programming-Assignment-2.pdf)
+
+		1. - [X] [BWT](4_Algorithms-on-Strings/week_2_burrows_wheeler_transform/1_bwt/1_bwt.cpp)
+		2. - [X] [BWT Inverse](4_Algorithms-on-Strings/week_2_burrows_wheeler_transform/2_bwtinverse/2_bwt_inversed.cpp)
+		3. - [X] [BWT Matching](4_Algorithms-on-Strings/week_2_burrows_wheeler_transform/3_bwmatching/3_BWT_matching.cpp)
+		4. - [X] [Suffix Array](4_Algorithms-on-Strings/week_2_burrows_wheeler_transform/4_suffix_array/4_suffix_tree.cpp)
+
+
+- **Week-3** Knuth-Morris-Pratt Algorithm
+
+	- [**List of Contents**](4_Algorithms-on-Strings/week_3_knuth_morris_pratt_algorithm/Study_Material/)
+
+        1. [Knuth-Morris-Pratt Algorithm](4_Algorithms-on-Strings/week_3_knuth_morris_pratt_algorithm/Study_Material/14_algorithmic_challenges_1_knuth_morris_pratt.pdf)
+
+        	+ [Exact Pattren Matching](4_Algorithms-on-Strings/week_3_knuth_morris_pratt_algorithm/Study_Material/exact_pattren_matching.md)
+
+			+ [Safe Shift](4_Algorithms-on-Strings/week_3_knuth_morris_pratt_algorithm/Study_Material/safe_shift.md)
+
+			+ [Prefix Function](4_Algorithms-on-Strings/week_3_knuth_morris_pratt_algorithm/Study_Material/prefix_function.md)
+
+			+ [Knuth-Morris-Pratt Algorithm Implementation](4_Algorithms-on-Strings/week_3_knuth_morris_pratt_algorithm/Study_Material/knuth_morris_pratt_algorithm.md)
+
+- **Week-4** Suffix Array
+
+	- [**List of Contents**](4_Algorithms-on-Strings/week_4_suffix_array/Study_Material/)
+
+		1. [Suffix Array](4_Algorithms-on-Strings/week_4_suffix_array/Study_Material/14_algorithmic_challenges_2_suffix_array.pdf)
+
+			+ [Suffix Array Basics](4_Algorithms-on-Strings/week_4_suffix_array/Study_Material/suffix_array.md)
+			+ [Suffix Array Construction](4_Algorithms-on-Strings/week_4_suffix_array/Study_Material/suffix_array_construction.md)
+
+		2. [Suffix Tree from Suffix Array](4_Algorithms-on-Strings/week_4_suffix_array/Study_Material/14_algorithmic_challenges_3_from_suffix_array_to_suffix_tree.pdf)
+
+			+ [LCP Array Introduction](4_Algorithms-on-Strings/week_4_suffix_array/Study_Material/lcp_introduction.md)
+			+ [Suffix Tree](4_Algorithms-on-Strings/week_4_suffix_array/Study_Material/suffix_tree.md)

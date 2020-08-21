@@ -74,7 +74,7 @@ The given below is the  Inverse of Burrows Wheeler Tramsformation of the word '*
 ![Step 8](images/Inverse_BWT_8.png)
 
 
-##### Memory Issue
+#### Memory Issue
 
 - Reconstruction of the TEXT from the BWT(TEXT) required us to store |TEXT| cycles rotation of the |TEXT|.
 

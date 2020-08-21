@@ -118,8 +118,8 @@ TireMatching(Text, Tire) {
 
 **Runtime:**  O(|text|. |length of the largest pattren|)
 
-But in this approch the memory consumption become very very large.
+#### Problems
 
-
-The no. of the egdes in tire become sum of the length of the string.
-So this approch is not practicle.
+- In this approch the memory consumption become very very large.
+- The no. of the egdes in tire become sum of the length of the string.
+- So this approch is not practicle.

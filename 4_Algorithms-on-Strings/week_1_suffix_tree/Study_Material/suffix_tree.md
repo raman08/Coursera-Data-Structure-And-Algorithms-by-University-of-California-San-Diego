@@ -1,15 +1,15 @@
 
 ### Suffix Tree
 
-To solve this problem we compress all the non-branching edges into one.
+To solve the memory consumption problem we compress all the non-branching edges into one.
 
-This is called suffix tree.
+This is called **suffix tree**.
 
 One example is given below:
 
 ![Suffix Tree](images/suffix_tree.png)
 
-**Memory** :O(|Text|)
+**Memory** : O(|Text|)
 
 But here still there we need the to store the edge information of the suffix tree which will consume the same memory as the suffix_tire.
 
@@ -17,10 +17,10 @@ To solve this problem we can only store the starting position and the length of 
 
 ![Suffix Tree Improved](images/suffix_tree_improved.png)
 
-- The native algorithm for the construction of the suffix tree is **quadratic* runtime.
+- The native algorithm for the construction of the suffix tree is **quadratic** runtime.
 	- O( |Text|^2 )
 
-- But there is a linear time algorithm called weiner algorithm for the construction of the suffix tree.
+- But there is a linear time algorithm called **Weiner algorithm** for the construction of the suffix tree.
 	- O( |Text| )
 
 

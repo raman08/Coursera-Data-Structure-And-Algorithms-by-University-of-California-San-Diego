@@ -17,6 +17,7 @@
 
 **No of edges:** O(|S|)
 
+### Implementation
 
 ##### class SuffixTreeNode:
 
@@ -80,11 +81,11 @@ BreakEdge(node, S, start, offset) {
 ```
 
 
-##### STfromSA(S, order, lcpArray)
+##### STreefromSArray(S, order, lcpArray)
 
 ```
 
-STfromSA(S, order, lcpArray) {
+STreefromSArray(S, order, lcpArray) {
 
 	root = new SuffixTreeNode (
 		children = {}, parent = nil, stringDepth = 0,
