@@ -9,7 +9,6 @@
 - [4. Algorithms On String](#4-algorithms-on-string)
 
 </br>
-</br>
 
 ## 1. Algorithmic Toolbox
 
