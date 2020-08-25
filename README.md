@@ -1,5 +1,12 @@
 # Data Structure And Algorithms by University of California San Diego
 
+## List of Courses
+
+1. [Algorithmic Toolbox](README.md#1.-Algorithmic-Toolbox)
+2. [Data Structures](README.md#2.-Data-Structures)
+3. [Algorithms On Graphs](README.md#3.-Algorithms-On-Graphs)
+4. [Algorithms On String](README.md#4.-Algorithms-On-String)
+
 ## 1. Algorithmic Toolbox
 
 - **Week-1** Programming Challanges
