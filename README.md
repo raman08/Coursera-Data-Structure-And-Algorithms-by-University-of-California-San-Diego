@@ -3,10 +3,10 @@
 ## List of Courses
 
 
-- [1. Algorithmic Toolbox](#1-algorithmic-toolbox)
-- [2. Data Structures](#2-data-structures)
-- [3. Algorithms On Graphs](#3-algorithms-on-graphs)
-- [4. Algorithms On String](#4-algorithms-on-string)
+- [**1. Algorithmic Toolbox**](#1-algorithmic-toolbox)
+- [**2. Data Structures**](#2-data-structures)
+- [**3. Algorithms On Graphs**](#3-algorithms-on-graphs)
+- [**4. Algorithms On String**](#4-algorithms-on-string)
 
 </br>
 
