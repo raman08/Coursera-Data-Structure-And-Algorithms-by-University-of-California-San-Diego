@@ -2,10 +2,11 @@
 
 ## List of Courses
 
-1. [Algorithmic Toolbox](README.md#1.-Algorithmic-Toolbox)
-2. [Data Structures](README.md#2.-Data-Structures)
-3. [Algorithms On Graphs](README.md#3.-Algorithms-On-Graphs)
-4. [Algorithms On String](README.md#4.-Algorithms-On-String)
+
+- [1. Algorithmic Toolbox](#1-algorithmic-toolbox)
+- [2. Data Structures](#2-data-structures)
+- [3. Algorithms On Graphs](#3-algorithms-on-graphs)
+- [4. Algorithms On String](#4-algorithms-on-string)
 
 ## 1. Algorithmic Toolbox
 
