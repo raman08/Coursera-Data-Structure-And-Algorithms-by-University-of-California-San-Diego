@@ -1,10 +1,11 @@
 # Data Structure And Algorithms by University of California San Diego
 
 ## List of Courses
-	- [1. Algorithmic Toolbox  (Course link)](#1-algorithmic-toolbox-course-link)
-	- [2. Data Structures](#2-data-structures)
-	- [3. Algorithms On Graphs](#3-algorithms-on-graphs)
-	- [4. Algorithms On String](#4-algorithms-on-string)
+
+- [1. Algorithmic Toolbox](#1-algorithmic-toolbox-course-link)
+- [2. Data Structures](#2-data-structures)
+- [3. Algorithms On Graphs](#3-algorithms-on-graphs)
+- [4. Algorithms On String](#4-algorithms-on-string)
 
 </br>
 
