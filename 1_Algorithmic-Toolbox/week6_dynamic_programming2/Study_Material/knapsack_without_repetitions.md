@@ -2,7 +2,7 @@
 
 #### Problem Statement:
 
-We are given an unlimited quantity of each item.
+We are given an limited quantity of each item.
 
 **Input:**
 We're given n items with weights w1, w2 ... wn. And its values are v1, v2 ... Vn.
