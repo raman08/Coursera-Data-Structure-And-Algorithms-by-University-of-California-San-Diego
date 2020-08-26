@@ -12,7 +12,7 @@
 ### Implementation details
 
 * Use disjoint set data structure.
-* Initially, each vertex lies on the seprate vertex.
+* Initially, each vertex lies on the seprate set.
 * Each set if the set of vertices if a connected component.
 * To check weather the current edge {u, v} produce a cycle, we check weather u and v belong to the same set.
 
@@ -31,7 +31,7 @@ Kruskal(G) {
 
 	for all {u, v} in E in assending weight order:
 		if find(u) != find(v):
-			all {u, v} to X
+			add {u, v} to X
 			Union(u, v)
 
 	return X
