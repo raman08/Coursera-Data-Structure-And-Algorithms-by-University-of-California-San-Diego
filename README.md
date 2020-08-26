@@ -2,14 +2,16 @@
 
 ## List of Courses
 
-- [1. Algorithmic Toolbox](#1-algorithmic-toolbox-course-link)
+- [1. Algorithmic Toolbox](#1-algorithmic-toolbox)
 - [2. Data Structures](#2-data-structures)
 - [3. Algorithms On Graphs](#3-algorithms-on-graphs)
 - [4. Algorithms On String](#4-algorithms-on-string)
 
 </br>
 
-## 1. Algorithmic Toolbox  ([Course link](https://www.coursera.org/learn/algorithmic-toolbox/home/welcome))
+## 1. Algorithmic Toolbox  
+
+- [***Course link***](https://www.coursera.org/learn/algorithmic-toolbox/home/welcome)
 
 - **Week-1** Programming Challanges
 
@@ -179,7 +181,9 @@
 
 
 
-## 2. Data Structures  ([Course Link](https://www.coursera.org/learn/data-structures/home/welcome))
+## 2. Data Structures
+
+- [***Course Link***](https://www.coursera.org/learn/data-structures/home/welcome)
 
 - **Week-1** Basic Data Structures
 
@@ -323,7 +327,9 @@
 
 		5. - [ ] [Rope](2_Data-Structures/week5_binary_search_trees/5_rope/)
 
-## 3. Algorithms On Graphs  ([Course Link](https://www.coursera.org/learn/algorithms-on-graphs/home/welcome))
+## 3. Algorithms On Graphs  
+
+- [***Course Link***](https://www.coursera.org/learn/algorithms-on-graphs/home/welcome)
 
 - **Week-1** Graph Decomposition Part-1
 
@@ -432,7 +438,9 @@
 
 		2. - [X] [Clustering](3_Algorithms-on-Graphs/week5_spanning_trees/2_clustering/2_clustering.cpp)
 
-## 4. Algorithms On String  ([Course Link](https://www.coursera.org/learn/algorithms-on-strings/home/welcome))
+## 4. Algorithms On String  
+
+- [***Course Link***](https://www.coursera.org/learn/algorithms-on-strings/home/welcome)
 
 - **Week-1** Suffix Tree
 
