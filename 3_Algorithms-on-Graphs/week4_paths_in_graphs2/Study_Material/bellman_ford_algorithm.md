@@ -2,9 +2,9 @@
 
 This algorithm is useful when there is negitive weights in the graph.
 
-**Note:** The Dijkstra Algoritm will not work on the graphs with negative weights.
-
-**Note:** This algorithm will not give correct answer for the graph with negitive weights algorithm.
+**Note:**  
+- The Dijkstra Algoritm will not work on the graphs with negative weights.
+- This algorithm will not give correct answer for the graph with negitive weights algorithm.
 
 ### Implementation
 

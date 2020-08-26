@@ -94,8 +94,9 @@ Randomized_Quick_sort(A, l, r) {
 
 	m = Partition(A, l, r)
 
-	Quick_sort(A, l, m - 1)
-	Quick_sort(A, m + 1, r)
+	Randomized_Quick_sort(A, l, m - 1)
+	Randomized_Quick_sort(A, m + 1, r)
+	
 }
 
 ```
