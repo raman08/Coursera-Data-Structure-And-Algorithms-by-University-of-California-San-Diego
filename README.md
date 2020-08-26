@@ -1,16 +1,14 @@
 # Data Structure And Algorithms by University of California San Diego
 
 ## List of Courses
-
-
-- [**1. Algorithmic Toolbox**](#1-algorithmic-toolbox)
-- [**2. Data Structures**](#2-data-structures)
-- [**3. Algorithms On Graphs**](#3-algorithms-on-graphs)
-- [**4. Algorithms On String**](#4-algorithms-on-string)
+	- [1. Algorithmic Toolbox  (Course link)](#1-algorithmic-toolbox-course-link)
+	- [2. Data Structures](#2-data-structures)
+	- [3. Algorithms On Graphs](#3-algorithms-on-graphs)
+	- [4. Algorithms On String](#4-algorithms-on-string)
 
 </br>
 
-## 1. Algorithmic Toolbox
+## 1. Algorithmic Toolbox  ([Course link](https://www.coursera.org/learn/algorithmic-toolbox/home/welcome))
 
 - **Week-1** Programming Challanges
 
@@ -162,11 +160,11 @@
 
 		1. [KnapSack](1_Algorithmic-Toolbox/week6_dynamic_programming2/Study_Material/4-dynprog-3-knapsack.pdf)
 
-			+ [Knapsack With Repetitions](1_Algorithmic-Toolbox/week6_dynamic_programming2/Study_Material/knapsack_with_repetitions.md)
+			+ [Knapsack With Repetitions](1_Algorithmic-Toolbox/week6_dynamic_programming2/Study_Material/knapsack_with_repetitions.md)   ([Video](https://www.coursera.org/learn/algorithmic-toolbox/lecture/uYVzW/knapsack-with-repetitions))
 
-            + [Knapsack With Repetitions](1_Algorithmic-Toolbox/week6_dynamic_programming2/Study_Material/knapsack_without_repetitions.md)
+            + [Knapsack Without Repetitions](1_Algorithmic-Toolbox/week6_dynamic_programming2/Study_Material/knapsack_without_repetitions.md)  ([Video](https://www.coursera.org/learn/algorithmic-toolbox/lecture/QVEY4/knapsack-without-repetitions))
 
-		2. [Placing Parentheses](1_Algorithmic-Toolbox/week6_dynamic_programming2/Study_Material/4-dynprog-4-maxarith.pdf)
+		2. [Placing Parentheses](1_Algorithmic-Toolbox/week6_dynamic_programming2/Study_Material/4-dynprog-4-maxarith.pdf)  ([Video](https://www.coursera.org/learn/algorithmic-toolbox/lecture/hCxMz/problem-overview))
 
 	- [**Progrmming Assignment-5**](1_Algorithmic-Toolbox/week6_dynamic_programming2/week6_dynamic_programming2.pdf)
 
@@ -180,7 +178,7 @@
 
 
 
-## 2. Data Structures
+## 2. Data Structures  ([Course Link](https://www.coursera.org/learn/data-structures/home/welcome))
 
 - **Week-1** Basic Data Structures
 
@@ -324,7 +322,7 @@
 
 		5. - [ ] [Rope](2_Data-Structures/week5_binary_search_trees/5_rope/)
 
-## 3. Algorithms On Graphs
+## 3. Algorithms On Graphs  ([Course Link](https://www.coursera.org/learn/algorithms-on-graphs/home/welcome))
 
 - **Week-1** Graph Decomposition Part-1
 
@@ -433,7 +431,7 @@
 
 		2. - [X] [Clustering](3_Algorithms-on-Graphs/week5_spanning_trees/2_clustering/2_clustering.cpp)
 
-## 4. Algorithms On String
+## 4. Algorithms On String  ([Course Link](https://www.coursera.org/learn/algorithms-on-strings/home/welcome))
 
 - **Week-1** Suffix Tree
 
